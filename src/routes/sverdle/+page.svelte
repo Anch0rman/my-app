@@ -56,9 +56,7 @@
 	 */
 	function update(event: MouseEvent) {
 		const guess = data.guesses[i];
-		const key = (event.target as HTMLButtonElement).getAttribute(
-			'data-key'
-		);
+		const key = (event.target as HTMLButtonElement).getAttribute('data-key');
 
 		if (key === 'backspace') {
 			data.guesses[i] = guess.slice(0, -1);
@@ -277,16 +275,16 @@
 	}
 
 	.letter.exact {
-		background: var(--color-theme-2);
+		background: var(--color-theme-1);
 		color: white;
 	}
 
 	.letter.close {
-		border: 2px solid var(--color-theme-2);
+		border: 2px solid var(--color-theme-1);
 	}
 
 	.selected {
-		outline: 2px solid var(--color-theme-1);
+		outline: 2px solid var(--color-theme-2);
 	}
 
 	.controls {
@@ -324,7 +322,7 @@
 	}
 
 	.keyboard button.exact {
-		background: var(--color-theme-2);
+		background: var(--color-theme-1);
 		color: white;
 	}
 
@@ -333,11 +331,11 @@
 	}
 
 	.keyboard button.close {
-		border: 2px solid var(--color-theme-2);
+		border: 2px solid var(--color-theme-1);
 	}
 
 	.keyboard button:focus {
-		background: var(--color-theme-1);
+		background: var(--color-theme-2);
 		color: white;
 		outline: none;
 	}
@@ -375,7 +373,7 @@
 
 	.restart:focus,
 	.restart:hover {
-		background: var(--color-theme-1);
+		background: var(--color-theme-2);
 		color: white;
 		outline: none;
 	}
